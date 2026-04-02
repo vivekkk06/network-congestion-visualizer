@@ -81,3 +81,43 @@ This project simulates real-world network congestion behavior and provides a mod
 ---
 
 ## 📁 Project Structure
+network-congestion-visualizer/
+│
+├── dashboard/ # Frontend (UI + charts)
+├── sim/ # Simulation logic (TCP, Router, Sender)
+├── benchmarks/ # Benchmark runner + CSV results
+├── main.py # Entry point
+├── requirements.txt
+└── README.md
+
+
+
+---
+
+## ▶️ Run Locally
+
+```bash
+git clone https://github.com/vivekkk06/network-congestion-visualizer.git
+cd network-congestion-visualizer
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run dashboard
+python main.py --dashboard
+
+
+
+Benchmark Mode
+
+To generate benchmark data:
+
+python -m benchmarks.run_all
+
+Author
+VIVEK BADGUJAR
+
