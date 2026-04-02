@@ -117,7 +117,7 @@ Benchmark Mode
 To generate benchmark data:
 
 python -m benchmarks.run_all
-
-Author
+```
+AUTHOR 
 VIVEK BADGUJAR
 
